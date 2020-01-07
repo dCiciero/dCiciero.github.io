@@ -1,0 +1,45 @@
+
+#color #circleDiv{
+    background: lightgrey;
+    /* color: lightgrey; */
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    /* margin: 0 auto; */
+}
+
+button{
+    padding: 10px;
+    background-color: rgb(70, 146, 247);
+    border: 0px;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px;
+    
+
+}
+
+ul li{
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    margin-left: 0px;
+    clear: both;
+    /* margin-right: 50px; */
+}
+
+ul li button{
+    margin: 0 auto;
+    float: right;
+    margin: 2px;
+    padding: 5px;
+    
+}
+
+input {
+    padding: 5px;
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "name" : "Ogaga",
+        "inoffice" : true
+    },
+    {
+        "name" : "greg",
+        "inoffice" : false
+    },
+    {
+        "name" : "chisom",
+        "inoffice" : true
+    },
+    {
+        "name" : "Jude",
+        "inoffice" : true
+    },
+    {
+        "name" : "ada",
+        "inoffice" : false
+    },
+    {
+        "name" : "peter",
+        "inoffice" : false
+    },
+    {
+        "name" : "gbenga",
+        "inoffice" : true
+    }
+]

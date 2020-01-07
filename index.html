@@ -1,1 +1,40 @@
-"helo World" 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="http://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>AJAX with JavaScript</title>
+    <script>
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+          if (xhr.readystate === 4) {
+            document.getElementById('ajax').innerHTML = xhr.responseText;
+          }
+        };
+        xhr.open('GET', 'sidebar.html');
+        xhr.setRequestHeader('Access-Control-Allow-Origin', 'anonymous');
+        // xhr.setRequestHeader('Access-Control-Allow-Credentials', 'true');
+        // xhr.setRequestHeader('Access-Control-Allow-Methods', 'GET');
+        // xhr.setRequestHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, Accept-Language, X-Requested-Width');
+        function sendAJAX() {
+
+            xhr.send();
+            document.getElementById('load').style.display = "none";
+            console.log('Done!');
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Bring on the AJAX</h1>
+        <button id="load" onclick="sendAJAX();">Bring It!</button>
+    </div>
+    <div id="ajax">
+
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/widget.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+</body>
+</html>

@@ -1,7 +1,8 @@
 let xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
-        console.log(xhr.responseText);
+        let employee = JSON.parse(xhr.responseText);
+        console.log(employee);
     }
 };
 
